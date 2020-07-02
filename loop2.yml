@@ -1,0 +1,8 @@
+- hosts: linux
+  tasks:
+  - name: print some messages
+    debug: msg=" ansible {{ item[0] }} on day {{ item[1] }} is {{ item[2] }}"
+    with_nested:
+    - [ 'traing', 'lab', 'handson']
+    - [1, 2, 3]
+    - ['good', 'bad', 'great']

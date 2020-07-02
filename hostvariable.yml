@@ -1,0 +1,8 @@
+- hosts: linux
+  tasks:
+  - name: print host varaible
+    debug:
+      msg: "https port no is {{ http_port }}"
+  - name: print host group variable
+    debug:
+      msg: "port no is {{ port }}"

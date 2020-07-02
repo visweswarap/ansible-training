@@ -1,0 +1,7 @@
+- hosts: win
+  tasks:
+  - name: create dit in windows
+    win_file: 
+      path: c:\temp
+      state: directory
+     

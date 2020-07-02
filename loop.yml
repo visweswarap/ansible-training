@@ -1,0 +1,11 @@
+- hosts: linux
+  tasks:
+  - name: create multiple dir
+    file: 
+      path: "{{ item }}"
+      state: directory
+    with_items:
+    - /home/ansible/dir1
+    - /home/ansible/dir2
+    - /home/ansible/dir3
+
